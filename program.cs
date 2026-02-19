@@ -6,9 +6,14 @@ namespace lab1git
     {
         static void Main()
         {
-            Console.Write("Enter your name: ");
+            Utils.PrintSeparator();              
+            
+            Console.Write("Please enter your name: "); //ввод имени 
             string name = Console.ReadLine();
-            Console.WriteLine($"Hello, {name}!");
+            
+
+            Console.WriteLine($"Hello, dear {name}!");            
+            Utils.PrintSeparator();          
         }
     }
 }
