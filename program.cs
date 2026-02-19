@@ -6,9 +6,20 @@ namespace lab1git
     {
         static void Main()
         {
-            Console.Write("Enter your name: ");
-            string name = Console.ReadLine();
-            Console.WriteLine($"Hello, {name}!");
+            Console.Write("Enter login: ");       //логин
+            string login = Console.ReadLine();
+            
+            Console.Write("Enter password: ");     //пароль
+            string password = Console.ReadLine();  
+            
+            if (Auth.CheckLogin(login, password))  //проверка
+            {
+                Console.WriteLine($"Welcome, {login}!");
+            }
+            else
+            {
+                Console.WriteLine("Access denied!");
+            }
         }
     }
 }
